@@ -20,8 +20,8 @@ public function do_upload()
 
     $this->load->library('upload', $config);
     if (!$this->upload->do_upload('nama_file1')) {
-      $error = array('error' => $this->upload->display_errors());
-      $this->load->view('upload', $error);
+      // $error = array('error' => $this->upload->display_errors());
+      // $this->load->view('upload', $error);
     }else {
       $nama_file1_up = array('upload_data' => $this->upload->data());
     }
@@ -37,8 +37,8 @@ public function do_upload()
 
       $this->load->library('upload', $config);
       if (!$this->upload->do_upload('nama_file2')) {
-        $error = array('error' => $this->upload->display_errors());
-        $this->load->view('upload', $error);
+        // $error = array('error' => $this->upload->display_errors());
+        // $this->load->view('upload', $error);
       }else {
         $nama_file2_up = array('upload_data' => $this->upload->data());
       }
